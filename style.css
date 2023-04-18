@@ -7,7 +7,7 @@
 
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "quasimoda", "a-otf-jun-pro", 'Arial',sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f7f7f7;
@@ -31,16 +31,32 @@ header img:hover {
     opacity: 0.7;
 }
 
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-text {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
 .header-right ul {
     list-style: none;
     display: flex;
+    margin-right: 40px;
 }
 
 .header-right ul li {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .header-right ul li a {
+    font-size: 20px;
     text-decoration: none;
     color: #333;
     transition: color 0.3s;
@@ -52,7 +68,7 @@ header img:hover {
 
 /* Main Content */
 main {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .top {
@@ -60,28 +76,198 @@ main {
 }
 
 .top img {
+    position: relative;
     width: 100%;
     height: auto;
 }
 
-.name {
+.black-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 1; /* 黒い背景が画像の上に表示されるようにz-indexを設定 */
+}
+
+.name-motto {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #000000;
+    z-index: 2;
 }
 
 .name-ja {
     font-family: "a-otf-jun-pro", sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 15px;
+    color: #ffffff;
 }
 
 .name-en {
     font-family: "quasimoda", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 300;
+    font-style: italic;
     text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.motto {
+    display: absolute;
+    font-family: "quasimoda", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    z-index: 2;
+}
+
+.mid {
+    height: 800px;
+}
+
+.profile {
+    align-items: left;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.profile h2 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
+    color: #333;
+}
+
+.profile ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-content {
+    font-weight: 300;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-content img {
+    margin-right: 30px;
+}
+
+.links {
+    align-items: left;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.links h2 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
+    color: #333;
+}
+
+.links ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.links-content {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.links-content ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    font-family: "quasimoda", "a-otf-jun-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.links-content span {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.links-content img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+footer {
+    border-top: 1px solid #cccccc; /* ラインの太さと色を設定 */
+    padding: 20px 0; /* ラインとフッターコンテンツの間に余白を追加 */
+    margin-right: 300px;
+    margin-left:300px;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left ul {
+    list-style: none;
+    display: flex;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.footer-left ul li {
+    margin-left: 30px;
+}
+
+.footer-left ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-left ul li a:hover {
+    color: #777;
+}
+
+.footer-right ul {
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.footer-right ul li {
+    margin-right: 30px;
+}
+
+.footer-right ul li a {
+    text-decoration: none;
+    color: #0969da;
+    transition: color 0.3s;
 }

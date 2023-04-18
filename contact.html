@@ -4,17 +4,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/1z7A6yt6U5gy6z5U5v5v8F9LOB3qA5A7x3Nw5w" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
 
-        <title>れじぇない</title>
+        <title>Contact | れじぇスペース</title>
+
+        <script>
+            (function(d) {
+              var config = {
+                kitId: 'oex7ckl',
+                scriptTimeout: 3000,
+                async: true
+              },
+              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+        </script>
+
     </head>
     <body>
         <!-- 左側にアイコン、右側に横並びのメニューバーを含んだヘッダー -->
         <header>
             <div class="header-left">
                 <!-- 画像をクリックするとindex.htmlにリダイレクトするように設定 -->
-                <a href="index.html"><img src="img/icon.png" alt="icon"></a>
+                <a href="index.html"><img src="img/icon.png" alt="icon" width="50px" height="50px"></a>
+                <a href="index.html" class="header-logo-text">Lejenay Space</a>
             </div>
             <div class="header-right">
                 <!-- ヘッダー右側にメニューバーを追加する -->
@@ -24,5 +36,28 @@
                 </ul>
             </div>
         </header>
+        <!-- 自己紹介ページ　-->
+        <main>
+        </main>
+        <footer>
+            <div class="footer-wrap">
+                <div class="footer-left">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <ul>
+                        <li><a href="https://twitter.com/Lejenay">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCCGsJ69NCjRS2AeYMU_SZpw">YouTube</a></li>
+                        <li><a href="https://github.com/Lejenay">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-center">
+                <p>© 2023 Lejenay</p>
+            </div>
+        </footer>
     </body>
 </html>
