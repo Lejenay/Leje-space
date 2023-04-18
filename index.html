@@ -1,0 +1,54 @@
+    <!DOCTYPE html>
+    <html lang="ja">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <link rel="stylesheet" href="style.css">
+
+            <title>れじぇない</title>
+
+            <script>
+                (function(d) {
+                  var config = {
+                    kitId: 'oex7ckl',
+                    scriptTimeout: 3000,
+                    async: true
+                  },
+                  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+                })(document);
+            </script>
+
+        </head>
+        <body>
+            <!-- 左側にアイコン、右側に横並びのメニューバーを含んだヘッダー -->
+            <header>
+                <div class="header-left">
+                    <!-- 画像をクリックするとindex.htmlにリダイレクトするように設定 -->
+                    <a href="index.html"><img src="img/icon.png" alt="icon" width="70px" height="70px"></a>
+                </div>
+                <div class="header-right">
+                    <!-- ヘッダー右側にメニューバーを追加する -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!-- 自己紹介ページ　-->
+            <main>
+                <!-- トップ画像の上で、その中心に日本語名、英名を入れる -->
+                <div class="top">
+                    <img src="back.png" alt="wallpaper" width="100%">
+                    <div class="name">
+                        <div class="name-ja">
+                            <h1>れじぇない</h1>
+                        </div>
+                        </div class="name-en">
+                            <h2>Lejenay</h2>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </body>
+    </html>
