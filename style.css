@@ -271,3 +271,11 @@ footer {
     color: #0969da;
     transition: color 0.3s;
 }
+
+@media (max-width: 1120px) {
+
+}
+
+@media (max-width: 720px) {
+    /* ハンバーガーメニューに切り替える */
+}
