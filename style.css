@@ -668,6 +668,9 @@ footer {
         width: 80px;
         height: 80px;
         object-fit: contain;
+    }
 
+    .links-content-left {
+        margin-right: 10px;
     }
 }
