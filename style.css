@@ -517,6 +517,14 @@ footer {
         margin-left: 30px;
     }
 
+    .header-left img {
+        display: none;
+    }
+
+    .header-left a {
+        margin-left: 10px;
+    }
+    
     .name-en {
         font-size: 20px;
     }
