@@ -1,0 +1,11 @@
+.nt {
+    height: 500px;
+    text-align: center;
+}
+
+.nt span {
+    font-size: 30px;
+    /* ntの高さの半分の位置に表示(line-heightを使わない） */
+    position: relative;
+    top: 50%;
+}

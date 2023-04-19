@@ -1,0 +1,124 @@
+/* Footer */
+footer {
+    border-top: 1px solid #cccccc; /* ラインの太さと色を設定 */
+    padding: 20px 0; /* ラインとフッターコンテンツの間に余白を追加 */
+    margin-right: 250px;
+    margin-left:250px;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left ul {
+    list-style: none;
+    display: flex;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.footer-left ul li {
+    margin-left: 30px;
+}
+
+.footer-left ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-left ul li a:hover {
+    color: #777;
+}
+
+.footer-right ul {
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.footer-right ul li {
+    margin-right: 30px;
+}
+
+.footer-right ul li a {
+    text-decoration: none;
+    color: #0969da;
+    transition: color 0.3s;
+}
+
+/* responsive footer */
+@media (max-width: 1024px) {
+    footer {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    footer {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    footer {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .footer-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .footer-left,
+    .footer-right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-left ul,
+    .footer-right ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-left ul li,
+    .footer-right ul li {
+        margin: 0 10px;
+    }
+
+    .footer-left ul li a:hover {
+        color: #666;
+    }
+}
