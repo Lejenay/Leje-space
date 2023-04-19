@@ -1,11 +1,270 @@
-.nt {
-    height: 500px;
-    text-align: center;
+.slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+  
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+}
+  
+.slide:first-child {
+    opacity: 1;
+}
+  
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    background-color: black;
+    border: none;
+    font-size: 50px;
+    padding: 8px;
+    cursor: pointer;
+}
+  
+.arrow-left {
+    left: 10px;
+}
+  
+.arrow-right {
+    right: 10px;
+}
+  
+.bdo-mid {
+    align-items: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
-.nt span {
-    font-size: 30px;
-    /* ntの高さの半分の位置に表示(line-heightを使わない） */
+.bdo-mid h1 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
+    color: #333;
+}
+
+.bdo {
+    color:rgb(121, 121, 121);
+}
+
+.timeline {
     position: relative;
-    top: 50%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 40px
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #6b6b6b;
+    left: 50%;
+    margin-left: -2px;
+    padding-bottom: 10px;
+}
+
+.timeline-item {
+    padding: 20px 0;
+}
+
+.timeline-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #6b6b6b;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 1;
+}
+
+.timeline-content {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.timeline-content.right {
+    left: 55%;
+}
+
+.timeline-content.left {
+    left: -5%;
+}
+
+.timeline-content.right a {
+    text-decoration: none;
+    color: black;
+}
+
+.timeline-content-eng {
+    font-size: 15px;
+    color:#6b6b6b
+}
+
+.bdo-bot {
+    height: 200px;
+    margin: 0 250px;
+}
+
+.bdo-bot h1 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .bdo-mid {
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .bdo-mid h1 {
+        font-size: 30px;
+    }
+
+    .timeline::before {
+        left: 40px;
+    }
+    .timeline-content {
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .timeline-content.right {
+        left: 0;
+    }
+    .timeline-content.left {
+        left: 0;
+    }
+
+    .timeline-icon {
+        display: none;
+    }
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: #6b6b6b;
+        left: 50%;
+        margin-left: -2px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .slider {
+        height: 300px;
+    }
+
+    .bdo-mid {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .bdo-mid h1 {
+        font-size: 30px;
+    }
+
+    .timeline::before {
+        left: 40px;
+    }
+    .timeline-content {
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .timeline-content.right {
+        left: 0;
+    }
+    .timeline-content.left {
+        left: 0;
+    }
+
+    .timeline-icon {
+        display: none;
+    }
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: #6b6b6b;
+        left: 50%;
+        margin-left: -2px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .slider {
+        height: 200px;
+    }
+
+    .bdo-mid {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .bdo-mid h1 {
+        font-size: 30px;
+    }
+
+    .timeline::before {
+        left: 40px;
+    }
+    .timeline-content {
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .timeline-content.right {
+        left: 0;
+    }
+    .timeline-content.left {
+        left: 0;
+    }
+
+    .timeline-icon {
+        display: none;
+    }
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: #6b6b6b;
+        left: 50%;
+        margin-left: -2px;
+        padding-bottom: 10px;
+    }
 }

@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* General Styles */
 body {
     font-family: "quasimoda", "a-otf-jun-pro", 'Arial',sans-serif;

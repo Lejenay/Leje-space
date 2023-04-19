@@ -68,7 +68,6 @@
     margin-right: 300px;
 }
 
-.profile
 /* Main Content */
 .top {
     position: relative;
@@ -121,11 +120,15 @@
 .motto {
     display: absolute;
     font-family: "quasimoda", sans-serif;
-    text-align: center;
+    text-align: right;
     color: #ffffff;
     margin-top: 200px;
     margin-bottom: 0px;
     z-index: 2;
+}
+
+.motto h2 {
+    text-align: center;
 }
 
 .mid {
@@ -251,6 +254,10 @@
     .motto {
         margin-top: 50px;
         font-size: 13px;
+    }
+
+    .motto h2 {
+        font-size: 15px;
     }
 
     .links-content ul li {
