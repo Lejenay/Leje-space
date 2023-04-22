@@ -63,6 +63,24 @@
     }
 }
 
+@media (max-width: 390px) {
+    .contact-text {
+        margin-right: 20px;
+    }
+
+    .contact img {
+        display: block;
+        margin: 50px 30px;
+        padding-right: 25px;
+    }
+
+    .contact-text p {
+        margin: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
 @media (max-width:375px) {
     .contact img {
         display: block;
