@@ -1,0 +1,43 @@
+.privacy {
+    margin: 0 400px;
+}
+
+.privacy h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.privacy-content {
+    margin: 100px 0;
+}
+
+.privacy-content-en {
+    margin-top: 50px;
+}
+
+.privacy-content a {
+    color: #0969da;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .privacy {
+        margin: 0 200px;
+    }
+}
+
+@media (max-width: 425px) {
+    .privacy {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .privacy {
+        margin: 0 30px;
+    }
+}
