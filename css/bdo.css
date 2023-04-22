@@ -22,12 +22,13 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #fff;
-    background-color: black;
+    color: #e4e4e4;
+    background-color: rgba(0, 0, 0, 0.397);
     border: none;
     font-size: 50px;
     padding: 8px;
     cursor: pointer;
+    border-radius: 30px;
 }
   
 .arrow-left {
@@ -124,7 +125,7 @@
 }
 
 .bdo-bot {
-    height: 200px;
+    height: 500px;
     margin: 0 250px;
 }
 
@@ -133,6 +134,75 @@
     font-style: normal;
     font-size: 40px;
     color: #333;
+}
+
+.hatena {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 20px 10px 10px 10px;
+    border-radius: 5px;
+    width: 500px;
+    border: solid 1px #cecece;
+}
+
+.hatena a {
+    text-decoration: none;
+    color: black;
+}
+
+.hatena-content-wrap {
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    border: solid 1px #cecece;
+}
+
+.hatena-content {
+    padding: 10px;
+}
+.hatena-head {
+    display: flex;
+    align-items: flex-start;
+}
+
+.hatena-head-icon {
+    margin-right: 10px;
+}
+
+.hatena-head-text {
+    display:flex;
+    flex-flow: column;
+    justify-content:space-between;
+    margin-right: auto;
+}
+
+.hatena-banner img {
+    zoom: 0.7;
+}
+
+.leje-memo {
+    color:#0969da;
+    font-size: 18px;
+}
+
+.id-lejenay23 {
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.hatena-since {
+    color:rgb(121, 121, 121);
+    font-size: 15px;
+}
+
+.hatena-star {
+    color: rgb(197, 197, 32);
+}
+
+.hatena-link {
+    margin-top:10px;
+    font-size: 15px;
+    color: #0969da;
 }
 
 @media (max-width: 768px) {
@@ -175,6 +245,11 @@
         margin-left: -2px;
         padding-bottom: 10px;
     }
+
+    .bdo-bot {
+        margin: 0 200px;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -221,9 +296,35 @@
         margin-left: -2px;
         padding-bottom: 10px;
     }
+
+    .hatena {
+        width: 400px;
+        zoom: 0.8;
+    }
+
+    .bdo-bot {
+        margin: 0 50px;
+    }
 }
 
 @media (max-width: 375px) {
+    /* .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e4e4e4;
+    background-color: rgba(0, 0, 0, 0.397);
+    border: none;
+    font-size: 50px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 30px;
+    }*/
+    .arrow {
+        font-size:30px;
+        border-radius: 20px;
+    }
+    
     .slider {
         height: 200px;
     }
@@ -267,4 +368,70 @@
         margin-left: -2px;
         padding-bottom: 10px;
     }
+
+    .hatena {
+        width: 400px;
+        zoom: 0.75;
+    }
+
+    .bdo-bot {
+        margin: 0 50px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .slider {
+        height: 200px;
+    }
+
+    .bdo-mid {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .bdo-mid h1 {
+        font-size: 30px;
+    }
+
+    .timeline::before {
+        left: 40px;
+    }
+    .timeline-content {
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .timeline-content.right {
+        left: 0;
+    }
+    .timeline-content.left {
+        left: 0;
+    }
+
+    .timeline-icon {
+        display: none;
+    }
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: #6b6b6b;
+        left: 50%;
+        margin-left: -2px;
+        padding-bottom: 10px;
+    }
+
+    .hatena {
+        width: 350px;
+        zoom: 0.7;
+    }
+
+    .bdo-bot {
+        margin: 0 50px;
+    }
+
 }
