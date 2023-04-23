@@ -308,18 +308,6 @@
 }
 
 @media (max-width: 375px) {
-    /* .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #e4e4e4;
-    background-color: rgba(0, 0, 0, 0.397);
-    border: none;
-    font-size: 50px;
-    padding: 8px;
-    cursor: pointer;
-    border-radius: 30px;
-    }*/
     .arrow {
         font-size:30px;
         border-radius: 20px;

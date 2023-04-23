@@ -17,77 +17,7 @@
     height: 100%;
     background-color: #000000;
     opacity: 0.6;
-    z-index: 1; /* 黒い背景が画像の上に表示されるようにz-indexを設定 */
-}
-
-.name-motto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #000000;
-    z-index: 2;
-}
-
-.name-ja {
-    font-family: "a-otf-jun-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 15px;
-    color: #ffffff;
-}
-
-.name-en {
-    font-family: "quasimoda", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    font-size: 50px;
-    color: #ffffff;
-}
-
-.motto {
-    display: absolute;
-    font-family: "quasimoda", sans-serif;
-    text-align: center;
-    color: #ffffff;
-    margin-top: 200px;
-    margin-bottom: 0px;
-    z-index: 2;
-}
-
-.mid {
-    height: 800px;
-}
-
-.profile {
-    align-items: left;
-    margin-top: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
-/* Main Content */
-.top {
-    position: relative;
-}
-
-.top img {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.black-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    opacity: 0.6;
-    z-index: 1; /* 黒い背景が画像の上に表示されるようにz-indexを設定 */
+    z-index: 1; 
 }
 
 .name-motto {
@@ -330,7 +260,6 @@
 }
 
 @media (max-width: 320px) {
-    /* profileの画像とテキストを縦に並べる */
     .profile-content {
         display: flex;
         flex-direction: column;
