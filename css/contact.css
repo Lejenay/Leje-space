@@ -1,8 +1,8 @@
 /* コンタクトクラス内のimgを縦並びにし、左寄せにする */
 .contact {
     margin-top: 50px;
-    margin-right: 300px;
-    margin-left: 300px;
+    margin-right: 500px;
+    margin-left: 500px;
     margin-bottom: 50px;
     display: flex;
 }
@@ -26,6 +26,16 @@
     color: #0969da;
     text-decoration: none;
     margin-right: 30px;
+}
+
+@media (max-width:1200px) {
+    .contact {
+        margin-top: 50px;
+        margin-right: 300px;
+        margin-left: 300px;
+        margin-bottom: 50px;
+        display: flex;
+    }
 }
 
 @media (max-width:1024px) {
