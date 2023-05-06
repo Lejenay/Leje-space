@@ -30,6 +30,12 @@
     }
 }
 
+@media (max-width: 600px) {
+    .privacy {
+        margin: 0 100px;
+    }
+}
+
 @media (max-width: 425px) {
     .privacy {
         margin: 0 50px;

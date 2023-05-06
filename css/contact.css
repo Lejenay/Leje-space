@@ -8,15 +8,22 @@
 
 .contact img {
     display: block;
-    margin: 50px;
+    margin: 50px auto;
 }
 
-.contact-text {
+.contact-icons {
+    width: 50%;
     vertical-align: middle;
 }
 
+.contact-text {
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+
 .contact-text p {
-    margin: 50px;
+    margin: 50px auto;
     font-size: 20px;
     height: 20%;
 }
@@ -55,18 +62,26 @@
         margin-bottom: 50px;
         display: flex;
     }
+
+    .contact-icons {
+        width: 30%;
+    }
+    
+    .contact-text {
+        width: 70%;
+    }
 }
 
 @media (max-width:425px) {
     .contact img {
         display: block;
-        margin: 50px;
+        margin: 50px auto;
         padding-right: 25px;
         width: 100%;
     }
 
     .contact-text p {
-        margin: 40px;
+        margin: 50px auto;
         font-size: 20px;
         height: 30%;
     }
@@ -79,12 +94,12 @@
 
     .contact img {
         display: block;
-        margin: 50px 30px;
+        margin: 50px 0px;
         padding-right: 25px;
     }
 
     .contact-text p {
-        margin: 40px;
+        margin: 50px 0px;
         font-size: 20px;
         text-align: center;
     }
@@ -93,7 +108,7 @@
 @media (max-width:375px) {
     .contact img {
         display: block;
-        margin: 30px;
+        margin: 30px 0px;
         padding-right: 25px;
         width: 100%;
     }

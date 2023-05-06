@@ -63,6 +63,7 @@
 
 .mid {
     height: 800px;
+    margin: auto 200px;
 }
 
 .profile {
@@ -94,6 +95,9 @@
 
 .profile-content img {
     margin-right: 30px;
+    width: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .links {
@@ -151,7 +155,20 @@
     margin-right: 100px;
 }
 
+/* Media Query */
 @media (max-width: 1024px) {
+    .mid {
+        margin: auto 100px;
+    }
+
+    .motto {
+        margin-top: 100px;
+    }
+
+    .motto h2 {
+        font-size: 20px;
+    }
+
     .profile {
         margin-left: 100px;
         margin-right: 100px;
@@ -163,10 +180,20 @@
 }
 
 @media (max-width: 768px) {
+    .name-en h1 {
+        font-size: 50px;
+    }
+
+    .name-ja h1 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
     .profile {
         margin-left: 30px;
         margin-right: 30px;
     }
+
     .links {
         margin-left: 30px;
         margin-right: 30px;
@@ -204,13 +231,26 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .links {
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .motto {
+        display: none;
+    }
+
+    .mid {
+        margin: 9px;
+    }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
+    .mid {
+        margin: 9px;
+    }
+
     .profile {
         margin-left: 20px;
         margin-right: 20px;
@@ -236,10 +276,6 @@
 
     .links h2 {
         font-size: 30px;
-    }
-
-    .motto {
-        display: none;
     }
 
     .profile-content img {
